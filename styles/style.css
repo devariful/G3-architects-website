@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;600;800&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Nav area */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    padding: 10px 30px;
+    list-style: none;
+    color: #424242;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+nav ul li a {
+    color: #727272;
+    text-decoration: none;
+
+}
+
+/* banner style */
+.banner {
+    /*  */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.banner-title {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.banner-des {
+    color: #727272;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.btn-primary {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+}
+
+.banner-img {
+    margin: 50px 0px;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 576px) {
+    header {
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+    .banner {
+        /* padding: 0px; */
+        /* margin: 0px; */
+
+    }
+
+    .banner-content {
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .banner-img {
+        width: 80%;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width:576px),
+and (max-width:768px) {
+    header {
+      
+
+    }
+    nav {
+
+       justify-content: space-around;
+       
+
+    }
+    .banner{
+        padding: 0px;
+        width: 100%;
+        text-align:center;
+    }
+    .banner img {
+        width: 50%;
+    }
+
+    .banner-content {
+       width: 100%;
+        /* flex-direction: column; */
+        
+    }
+    .banner-des{
+
+    }
+
+}
